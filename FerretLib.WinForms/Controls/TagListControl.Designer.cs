@@ -55,7 +55,7 @@
             // 
             // txtTag
             // 
-            this.txtTag.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtTag.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtTag.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtTag.Location = new System.Drawing.Point(3, 3);
             this.txtTag.Name = "txtTag";
