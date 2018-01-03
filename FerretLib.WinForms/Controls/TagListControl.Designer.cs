@@ -55,6 +55,8 @@
             // 
             // txtTag
             // 
+            this.txtTag.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtTag.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtTag.Location = new System.Drawing.Point(3, 3);
             this.txtTag.Name = "txtTag";
             this.txtTag.Size = new System.Drawing.Size(144, 20);
@@ -66,10 +68,10 @@
             this.tagLabelControl1.BackColor = System.Drawing.Color.White;
             this.tagLabelControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tagLabelControl1.Location = new System.Drawing.Point(153, 3);
-            this.tagLabelControl1.MaximumSize = new System.Drawing.Size(81, 20);
-            this.tagLabelControl1.MinimumSize = new System.Drawing.Size(81, 20);
+            this.tagLabelControl1.MaximumSize = new System.Drawing.Size(117, 19);
+            this.tagLabelControl1.MinimumSize = new System.Drawing.Size(117, 19);
             this.tagLabelControl1.Name = "tagLabelControl1";
-            this.tagLabelControl1.Size = new System.Drawing.Size(81, 20);
+            this.tagLabelControl1.Size = new System.Drawing.Size(117, 19);
             this.tagLabelControl1.TabIndex = 0;
             this.tagLabelControl1.Value = "instrumental";
             // 
@@ -78,10 +80,10 @@
             this.tagLabelControl2.BackColor = System.Drawing.Color.White;
             this.tagLabelControl2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tagLabelControl2.Location = new System.Drawing.Point(3, 29);
-            this.tagLabelControl2.MaximumSize = new System.Drawing.Size(50, 20);
-            this.tagLabelControl2.MinimumSize = new System.Drawing.Size(50, 20);
+            this.tagLabelControl2.MaximumSize = new System.Drawing.Size(71, 19);
+            this.tagLabelControl2.MinimumSize = new System.Drawing.Size(71, 19);
             this.tagLabelControl2.Name = "tagLabelControl2";
-            this.tagLabelControl2.Size = new System.Drawing.Size(50, 20);
+            this.tagLabelControl2.Size = new System.Drawing.Size(71, 19);
             this.tagLabelControl2.TabIndex = 1;
             this.tagLabelControl2.Value = "metal";
             // 
@@ -89,11 +91,11 @@
             // 
             this.tagLabelControl3.BackColor = System.Drawing.Color.White;
             this.tagLabelControl3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tagLabelControl3.Location = new System.Drawing.Point(59, 29);
-            this.tagLabelControl3.MaximumSize = new System.Drawing.Size(62, 20);
-            this.tagLabelControl3.MinimumSize = new System.Drawing.Size(62, 20);
+            this.tagLabelControl3.Location = new System.Drawing.Point(80, 29);
+            this.tagLabelControl3.MaximumSize = new System.Drawing.Size(86, 19);
+            this.tagLabelControl3.MinimumSize = new System.Drawing.Size(86, 19);
             this.tagLabelControl3.Name = "tagLabelControl3";
-            this.tagLabelControl3.Size = new System.Drawing.Size(62, 20);
+            this.tagLabelControl3.Size = new System.Drawing.Size(86, 19);
             this.tagLabelControl3.TabIndex = 2;
             this.tagLabelControl3.Value = "sweden";
             // 
@@ -101,11 +103,11 @@
             // 
             this.tagLabelControl4.BackColor = System.Drawing.Color.White;
             this.tagLabelControl4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tagLabelControl4.Location = new System.Drawing.Point(127, 29);
-            this.tagLabelControl4.MaximumSize = new System.Drawing.Size(107, 20);
-            this.tagLabelControl4.MinimumSize = new System.Drawing.Size(107, 20);
+            this.tagLabelControl4.Location = new System.Drawing.Point(3, 54);
+            this.tagLabelControl4.MaximumSize = new System.Drawing.Size(154, 19);
+            this.tagLabelControl4.MinimumSize = new System.Drawing.Size(154, 19);
             this.tagLabelControl4.Name = "tagLabelControl4";
-            this.tagLabelControl4.Size = new System.Drawing.Size(107, 20);
+            this.tagLabelControl4.Size = new System.Drawing.Size(154, 19);
             this.tagLabelControl4.TabIndex = 3;
             this.tagLabelControl4.Value = "progressive metal";
             // 

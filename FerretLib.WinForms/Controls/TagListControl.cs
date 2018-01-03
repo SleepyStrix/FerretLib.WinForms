@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
+using System;
 
 namespace FerretLib.WinForms.Controls
 {
@@ -96,9 +98,28 @@ namespace FerretLib.WinForms.Controls
         {
             if(e.KeyCode == Keys.Enter){
                 var text = txtTag.Text.Trim();
-                if (!string.IsNullOrEmpty(text)) AddTag(text);
+                text = Regex.Replace(text, "(\\s)+", "_"); //replace whitespace with _
+                if (!string.IsNullOrEmpty(text) && Validate_Text(text)) {
+                    AddTag(text);
+                }
                 txtTag.Text = "";
             }
+        }
+
+        private bool Validate_Text(string text) {
+            if (Regex.IsMatch(text, "^([A-Za-z0-9\\.\\(\\)_])+$")) {
+                Console.WriteLine("valid tag: " + text);
+                return true;
+            } else {
+                Console.WriteLine("invalid tag: " + text);
+                return false;
+            }
+        }
+
+        public void SetupAutoComplete(string[] source) {
+            AutoCompleteStringCollection auto_source = new AutoCompleteStringCollection();
+            auto_source.AddRange(source);
+            txtTag.AutoCompleteCustomSource = auto_source;
         }
     }
 }
